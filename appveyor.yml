@@ -1,0 +1,8 @@
+version: 1.0.{build}
+clone_folder: C:\GOPATH\src\github.com\owenwaller\spf13-hugo
+environment:
+  GOPATH: C:\GOPATH
+build_script:
+  - go get -v -d -t ./...
+test_script:
+  - go test -v -cover ./...
